@@ -39,11 +39,11 @@ function success(pos) {
       if (territoriesArray.length == 0) {
         var territoriesString = "Oops, something went wrong! Perhaps you're outside of an area covered by <a href=\"https://native-land.ca\">native-land.ca</a>"
       } else if (territoriesArray.length == 1) {
-        var territoriesString = "You are on " + territoriesArray + " land."
+        var territoriesString = `You are on ${territoriesArray} land.`
       } else if (territoriesArray.length == 2) {
-        var territoriesString = "You are on " + territoriesArray[0] + " and " + territoriesArray[1] + " land."
+        var territoriesString = `You are on ${territoriesArray[0]} and ${territoriesArray[1]} land.`
       } else if (territoriesArray.length > 2) {
-        var territoriesString = "You are on " + territoriesArray.slice(0, -1).join(", ") + ", and " + territoriesArray[territoriesArray.length - 1] + " land."
+        var territoriesString = `You are on ${territoriesArray.slice(0, -1).join(", ")}, and ${territoriesArray[territoriesArray.length - 1]} land.`
       }
     document.getElementById("territories").innerHTML = territoriesString
     document.getElementById("territories-map").innerHTML = `<iframe src=\"https://native-land.ca/api/embed/embed.html?maps=territories&position=${crd.latitude},${crd.longitude}\"></iframe>`
