@@ -1,0 +1,14 @@
+{
+  "name": "whose-land-is-it",
+  "version": "1.0.0",
+  "description": "Website (hopefully) to quickly tell you whose land you're on.",
+  "main": "land-thing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jltml",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}

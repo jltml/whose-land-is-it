@@ -1,0 +1,27 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: black;
+    color: white;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 99vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.location-note {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.territories {
+  padding: 7px 0px;
+  font-weight: bold;
+}
